@@ -12,15 +12,17 @@ void squeeze(char *s1,char *s2)
     int freq[26]={0}; // store frequency of character present in s2
     int i=0;
     // size of s2
-    while(*(s2 + i)!='\0'){
-    freq[(int)(*(s2 + i) - 'a')]++;
-    i++;
+    while(*(s2 + i)!='\0')
+    {
+        freq[(int)(*(s2 + i) - 'a')]++;
+        i++;
     }
     
     int j=0;
     //size of s1
-    while(*(s1 + j)!='\0'){
-    j++;
+    while(*(s1 + j)!='\0')
+    {
+        j++;
     }
     
     //output string
@@ -37,19 +39,18 @@ void squeeze(char *s1,char *s2)
     ans[low]='\0'; // null character at end
     // if string become empty
     if(low==0)
-	    printf("NILL");
+	printf("NILL");
     else
-    printf("%s",ans);
+        printf("%s",ans);
 }
 int main() {
-	//code
-	char s1[100];
-	char s2[100];
-	printf("Enter string S1 ");
-	scanf("%s",s1); // input s1
-	printf("Enter string S2 ");
-	scanf("%s",s2); // input s2
-	printf("String after squeeze ");
-	squeeze(s1,s2); // function to squeeze
-	return 0;
+    char s1[100];
+    char s2[100];
+    printf("Enter string S1 ");
+    scanf("%s",s1); // input s1
+    printf("Enter string S2 ");
+    scanf("%s",s2); // input s2
+    printf("String after squeeze ");
+    squeeze(s1,s2); // function to squeeze
+    return 0;
 }
