@@ -34,13 +34,13 @@ int any(char *s1,char *s2)
     return -1;
 }
 int main() {
-	char s1[100];
-	char s2[100];
-	printf("Enter string s1 ");
-	scanf("%s",s1); // input s1
-	printf("Enter string s2 ");
-	scanf("%s",s2); // input s2
-	printf("Present index ");
-	printf("%d",any(s1,s2)); // function to return index of first character of s1 Present in s2
-	return 0;
+    char s1[100];
+    char s2[100];
+    printf("Enter string s1 ");
+    scanf("%s",s1); // input s1
+    printf("Enter string s2 ");
+    scanf("%s",s2); // input s2
+    printf("Present index ");
+    printf("%d",any(s1,s2)); // function to return index of first character of s1 Present in s2
+    return 0;
 }
