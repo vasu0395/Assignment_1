@@ -44,7 +44,7 @@ void htoi(char *s)
            answer += ((s[i] - 'a' + 10) * current_power);
        }
        
-       // if character in range 'a' - 'f' then [10 - 15];
+       // if character in range 'A' - 'F' then [10 - 15];
        else if(s[i] >= 'A' && s[i] <= 'F')
        {
            answer += ((s[i] - 'A' + 10) * current_power);
@@ -64,8 +64,7 @@ int main()
     char input_str[100];
     printf("Enter string ");
     scanf("%s" , input_str);
-    
-    // calling the htoi function.    
+    // calling function.    
     htoi(input_str);
     
     return 0;
