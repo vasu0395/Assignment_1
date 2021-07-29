@@ -1,9 +1,9 @@
 /*
-   Compilation :- gcc string_reverse.c
-   Execution :- ./a.out
-   Program to find count of vowels and consonants
-   @vasu , 1910990395 ,23/07/2021
-   Assignment 1-C
+ * Compilation :- gcc string_reverse.c
+ * Execution :- ./a.out
+ * Program to reverse string
+ * @vasu , 1910990395 ,23/07/2021
+ * Assignment 1-C
 */
 #include <stdio.h>
 // Function to Reverse given string
