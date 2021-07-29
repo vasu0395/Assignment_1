@@ -7,7 +7,7 @@
  */
 #include <stdio.h>
 // Program to check wheather string t present at end of string s or not
-int strrindex(char *s,char *t) // parameter string
+int strend(char *s,char *t) // parameter string
 {
     int size_s=0; // intialize size of string s
     while(*(s + size_s)!='\0') // count size of string s
@@ -35,14 +35,13 @@ int strrindex(char *s,char *t) // parameter string
     return 1; // return 1 as it's present at end
 }
 int main() {
-	//code
-	char s[100]; // string S
-	char t[100]; // string T
-	printf("Enter string s ");
-	scanf("%s",s); // input string s
-	printf("Enter string t ");
-	scanf("%s",t); // input string t
-	// parameter string s and t
-	printf("%d",strrindex(s,t)); // function  calling with return type int
-	return 0;
+    char s[100]; // string S
+    char t[100]; // string T
+    printf("Enter string s ");
+    scanf("%s",s); // input string s
+    printf("Enter string t ");
+    scanf("%s",t); // input string t
+    // parameter string s and t
+    printf("%d",strend(s,t)); // function  calling with return type int
+    return 0;
 }
