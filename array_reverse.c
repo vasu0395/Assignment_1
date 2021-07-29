@@ -1,16 +1,16 @@
 /*
-   Compilation :- gcc array_reverse.c
-   Execution :- ./a.out
-   Program to find count of vowels and consonants
-   @vasu , 1910990395 ,23/07/2021
-   Assignment 1-C
+ * Compilation :- gcc array_reverse.c
+ * Execution :- ./a.out
+ * Program to Reverse Array Elements
+ * @vasu , 1910990395 ,23/07/2021
+ * Assignment 1-C
 */
 #include <stdio.h>
 // Function to Reverse given Array
 void reversed(int arr[],int size) // Parameter Passed : Array and Array's size
 {
     int lower_index=0; // set lower_index to 0
-    int upper_index=size-1; // set upper_index to string size - 1 
+    int upper_index=size-1; // set upper_index to size - 1 
     while(lower_index <= upper_index) // keep swapping character till lower_index <= upper_index
     {
         int temp=arr[lower_index]; // swapping characters
@@ -28,7 +28,7 @@ int main(){
     int arr[size]; // create Array of capacity size
     for(int i=0;i<size;i++)
     scanf("%d",&arr[i]); // input Elements of Array
-    reversed(arr,size); // Function to Reverse string
+    reversed(arr,size); // Function to Reverse Array
     for(int i=0;i<size;i++)
     printf("%d ",arr[i]); // output Array Elements
     return 0;
