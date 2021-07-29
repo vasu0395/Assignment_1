@@ -3,7 +3,7 @@
  *  Compilation : gcc string_fun.c
  *  Execution : ./a.out
  *  @vasu , 1910990395 , 23/07/2021
- *  Assignment 2
+ *  Assignment 1_c
 */
 #include <stdio.h>
 // Function for string Concatenation
@@ -79,14 +79,18 @@ void strncpy_(char *s,char *t,int n)
     printf("%s",s);
 }
 int main() {
-	char s1[100];
-	char s2[100];
-	printf("Enter string s1 ");
-	scanf("%s",s1);
-	printf("Enter string s2 ");
-	scanf("%s",s2);
-	printf("strncat Function result ");
+    char s1[100];
+    char s2[100];
+    // input string s1
+    printf("Enter string s1 ");
+    scanf("%s",s1);
+    // input string s2
+    printf("Enter string s2 ");
+    scanf("%s",s2);
+    // output strncat_ function
+    printf("strncat Function result ");
     strncat_(s1,s2);
+    // output strcmp_ function
     printf("\nstrcmp Function result ");
     int t=strcmp_(s1,s2);
     if(t==0)
@@ -95,7 +99,8 @@ int main() {
     printf("s1 is Less than s2");
     else
     printf("s1 is Greater than s2");
+    // output strncpy_ function
     printf("\nstrncpy Function result ");
-    strncpy_(s1,s2,5);
-	return 0;
+    strncpy_(s1,s2,5); // by default n=5
+    return 0;
 }
