@@ -3,7 +3,7 @@
  *  Compilation : gcc right_most_substring.c
  *  Execution : ./a.out
  *  @vasu , 1910990395 , 23/07/2021
- *  Assignment 2
+ *  Assignment 1_c
 */
 #include <stdio.h>
 // Program to find right most occurrence of s1 in s2
@@ -31,14 +31,14 @@ int right_most_substring(char *s1, char *s2)
     return -1; // not present in entire string
 }
 int main() {
-	char s1[100];
-	char s2[100];
-	printf("Enter string ");
-	scanf("%s",s1);
-	printf("Enter substring ");
-	scanf("%s",s2);
-	printf("Output : ");
-	printf("%d",right_most_substring(s2,s1));
-	printf("\n");
-	return 0;
+    char s1[100];
+    char s2[100];
+    printf("Enter string ");
+    scanf("%s",s1);
+    printf("Enter substring ");
+    scanf("%s",s2);
+    printf("Output : ");
+    printf("%d",right_most_substring(s2,s1));
+    printf("\n");
+    return 0;
 }
