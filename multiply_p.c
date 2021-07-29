@@ -3,7 +3,7 @@
  * Compilation : gcc multiply_p.c
  * Execution : ./a.out
  * @vasu , 1910990395 , 28/07/2021
- * Assignment 2
+ * Assignment 1-C
 */
 #include <stdio.h>
 
