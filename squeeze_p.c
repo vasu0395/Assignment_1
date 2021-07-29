@@ -1,12 +1,12 @@
 /*
- *  Program to check string palindrome or not
+ *  Program to squeeze s1 with respect to s2
  *  Compilation : gcc squeeze_p.c
  *  Execution : ./a.out
  *  @vasu , 1910990395 , 23/07/2021
- *  Assignment 2
+ *  Assignment 1_c
 */
 #include <stdio.h>
-// Program to squeeze s1 with respect to s2
+// Function to squeeze s1 with respect to s2
 void squeeze(char *s1,char *s2)
 {
     int freq[26]={0}; // store frequency of character present in s2
@@ -34,6 +34,8 @@ void squeeze(char *s1,char *s2)
             ans[low++]=*(s1 + k);
         }
     }
+    ans[low]='\0'; // null character at end
+    // if string become empty
     if(low==0)
 	    printf("NILL");
     else
