@@ -1,6 +1,7 @@
 /*
  *  Program to return first index of s1 character present in s2
- *  Execution : ./a.out
+ *  Execution : gcc any_p.c
+ *  compilation : ./a.out
  *  @vasu , 1910990395 , 23/07/2021
  *  Assignment_1
 */
