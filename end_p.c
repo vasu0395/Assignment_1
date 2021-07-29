@@ -1,9 +1,9 @@
-i/*
+/*
  * Program to check string T occurs end of string S or not.
  * Compilation : gcc end_p.c
  * Execution : ./a.out
  * @vasu , 1910990395 , 23/07/2021
- * Assignment 2
+ * Assignment 1-C
  */
 #include <stdio.h>
 // Program to check wheather string t present at end of string s or not
@@ -43,6 +43,6 @@ int main() {
 	printf("Enter string t ");
 	scanf("%s",t); // input string t
 	// parameter string s and t
-	printf("\n%d",strrindex(s,t)); // function  calling with return type int
+	printf("%d",strrindex(s,t)); // function  calling with return type int
 	return 0;
 }
