@@ -11,9 +11,9 @@ void reversed(int arr[],int size) // Parameter Passed : Array and Array's size
 {
     int lower_index=0; // set lower_index to 0
     int upper_index=size-1; // set upper_index to size - 1 
-    while(lower_index <= upper_index) // keep swapping character till lower_index <= upper_index
+    while(lower_index <= upper_index) // keep swapping elements till lower_index <= upper_index
     {
-        int temp=arr[lower_index]; // swapping characters
+        int temp=arr[lower_index]; // swapping elements
         arr[lower_index]=arr[upper_index];
         arr[upper_index]=temp;
         lower_index+=1; // increase lower_index
