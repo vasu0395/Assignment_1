@@ -7,7 +7,7 @@
 */
 #include <stdio.h>
 // Program to find right most occurrence of s1 in s2
-int right_most_substring(char *s1, char *s2)
+int strrindex(char *s1, char *s2)
 {
     int M=0;
     int N=0;
@@ -38,7 +38,7 @@ int main() {
     printf("Enter substring ");
     scanf("%s",s2);
     printf("Output : ");
-    printf("%d",right_most_substring(s2,s1));
+    printf("%d",strrindex(s2,s1));
     printf("\n");
     return 0;
 }
