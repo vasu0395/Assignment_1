@@ -39,7 +39,7 @@ int main() {
 	}
 		
 	// if length equal 80
-	if(len >= 80)
+	if(len > 80)
        	{
 	    // print current string
 	    for(int i = 0; i < len; i++)
