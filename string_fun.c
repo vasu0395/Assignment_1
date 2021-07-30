@@ -7,7 +7,8 @@
 */
 #include <stdio.h>
 // Function for string Concatenation
-void strncat_(char *s , char *t)
+// it operate only on first n characters of second string t (i.e  s + (first n characters of t))
+void strncat_(char *s , char *t,int n)
 {
     int s1=0;
     // Calculate size of string s
@@ -26,7 +27,7 @@ void strncat_(char *s , char *t)
     for(int i=0;i<s1;i++)
     ans[low++]=s[i];
     // copy all characters of t in ans
-    for(int i=0;i<s2;i++)
+    for(int i=0;i<s2 && i<n;i++)
     ans[low++]=t[i];
     ans[low]='\0';
     
@@ -34,7 +35,8 @@ void strncat_(char *s , char *t)
     printf("%s",ans);
 }
 // Function for string comparsion
-int strcmp_(char *s,char *t)
+// its just compare starting n characters of string s and t.
+int strcmp_(char *s,char *t,int n)
 {
     int s1=0;
     // Calculate size of string s
@@ -48,7 +50,7 @@ int strcmp_(char *s,char *t)
     
     // intialize lower index to 0
     int low=0;
-    while(low<s1 && low<s2)
+    while(low<n && low<s1 && low<s2)
     {
         // if characters are not Equal
         if(*(s+low)!=*(t + low))
@@ -66,6 +68,7 @@ int strcmp_(char *s,char *t)
     return -1; // if s2 is Less than s1
 }
 // Function for copy atmost n characters of t in s
+// its just copy n characters of t in s (i.e if s="vasu" t="tm_sky11" n=3 then answer "tm_u")
 void strncpy_(char *s,char *t,int n)
 {
     int low=0;
@@ -87,12 +90,15 @@ int main() {
     // input string s2
     printf("Enter string s2 ");
     scanf("%s",s2);
+    int n;
+    printf("Enter value of n ");
+    scanf("%d",&n);
     // output strncat_ function
     printf("strncat Function result ");
-    strncat_(s1,s2);
+    strncat_(s1,s2,n);
     // output strcmp_ function
     printf("\nstrcmp Function result ");
-    int t=strcmp_(s1,s2);
+    int t=strcmp_(s1,s2,n);
     if(t==0)
     printf("Equal");
     else if(t<0)
@@ -101,6 +107,6 @@ int main() {
     printf("s1 is Greater than s2");
     // output strncpy_ function
     printf("\nstrncpy Function result ");
-    strncpy_(s1,s2,5); // by default n=5
+    strncpy_(s1,s2,n); // by default n=5
     return 0;
 }
